@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход | ВКонтакте</title>
+  <link rel="icon" type="image/png" href="https://vk.com/images/icons/favicons/fav_logo.ico">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #2c2d2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 35px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 370px;
+    }
+
+    .vk-logo {
+      width: 32px;
+      height: 32px;
+      background-image: url('https://vk.com/images/icons/favicons/fav_logo.ico');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto 20px;
+    }
+
+    .qr-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .qr-code {
+      width: 208px;
+      height: 208px;
+      background-image: url('https://f-ien.udsu.ru/cache/Image/591@news_icon-000591-QR.jpg');
+      background-size: cover;
+      border-radius: 16px;
+    }
+
+    .qr-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background-image: url('https://vk.com/images/icons/favicons/fav_logo.ico');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #6d6d6d;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .faq-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #4a76a8;
+      text-decoration: none;
+    }
+
+    .faq-link:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      background-color: #4a76a8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #3b5f8e;
+    }
+
+    footer {
+      color: #999;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="qr-container">
+      <div class="qr-code"></div>
+      <div class="qr-overlay"></div>
+    </div>
+
+    <h1>Вход ВКонтакте</h1>
+    <p>Наведите камеру устройства на QR-код</p>
+    <a class="faq-link" href="https://id.vk.com/about/faq/users/registration_and_login/login/QR/20313" target="_blank">Подробнее</a>
+
+    <button class="btn">Войти другим способом</button>
+    <button class="btn">Создать аккаунт</button>
+
+    <footer>&copy; 2025 ВКонтакте LLC</footer>
+  </div>
+</body>
+</html>
